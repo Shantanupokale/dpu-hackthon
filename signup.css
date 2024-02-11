@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1e7e7;
+  }
+  
+  .container-fluid {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+    
+
+  }
+  
+  form {
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #f1e7e7;
+  }
+.form-control::placeholder{
+  color: #ede8e8;
+  /* background-color: #fff; */
+}
+  .form-control {
+    font-size: 20px;
+    margin: 10px 20px;
+    border-radius: 10px; /* Rounded corners for input fields */
+    background-color:transparent; /* Background color for input fields */
+    color: #f1e7e7; /* Text color for input fields */
+    border: 1px solid rgb(246, 245, 245)d9d; /* Border color for input fields */
+    padding: 10px; /* Padding for input fields */
+  }
+  
+  #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    /* Ensure the video stays behind other content */
+  }

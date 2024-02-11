@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <section id="hero">
+    <video autoplay muted loop id="video-background">
+      <source src="./assets/img/video 222.mp4" type="video/mp4">
+      <!-- Include additional source elements for different video formats if necessary -->
+      
+    </video>
+    <!-- Your content here -->
+  </section>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Signup Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="./signup.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #070b0f;
+      color: #f1e7e7;
+    
+    }
+    .container-fluid {
+      
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+} /* Adjust the maximum width as needed */
+    
+    form {
+      background-color: transparent;
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: 0 0 10px rgba(230, 210, 210, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <form action="forms/signup.php" method="post" role="form" class="php-email-form">
+      <h2>Create an Account</h2>
+      <div class="form-group">
+        <input type="text" name="username" class="form-control" id="username" placeholder="Enter Username" required>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password" required>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+      </div>
+      <button type="submit" style="background-color: #FFBB38 ;" class="btn btn-primary" onclick="redirectpage()">Sign Up</button>
+      <p class="mt-3">Already have an account? <a href="index.html" style="color: #FFBB38;">Log In</a></p>
+    </form>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="./dash.js"></script>
+</body>
+</html>
